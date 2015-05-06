@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>my_youku_server</display-name>
+  <welcome-file-list>
+    <welcome-file>HomePageSerlvet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HomePageSerlvet</display-name>
+    <servlet-name>HomePageSerlvet</servlet-name>
+    <servlet-class>com.tz.myyouku.servlet.HomePageSerlvet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomePageSerlvet</servlet-name>
+    <url-pattern>/HomePageSerlvet</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_title_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/icon_youku" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_game_search" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:src="@drawable/btn_game" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:src="@drawable/btn_recommend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:src="@drawable/btn_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_indicator_normal_btn"
+            android:orientation="horizontal" >
+
+            <com.tz.myyouku.view.TitleRadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                android:scrollbars="none"
+                android:fadingEdge="none">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    style="@style/TextTitleStyle"
+                    android:text="我的"
+                    android:checked="true"
+                    android:textColor="@color/light_blue" />
+
+                <ImageView style="@style/TextTitleDivider" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    style="@style/TextTitleStyle"
+                    android:text="首页" />
+
+                <ImageView style="@style/TextTitleDivider" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    style="@style/TextTitleStyle"
+                    android:text="推荐" />
+
+                <ImageView style="@style/TextTitleDivider" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    style="@style/TextTitleStyle"
+                    android:text="频道" />
+            </com.tz.myyouku.view.TitleRadioGroup>
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/iv_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="4dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_indicator_selected"/>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fadingEdge="none"/>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_page_bg">
+    
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dip">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dip">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/new_year_logo_youku"/>
+            
+            <TextView 
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V4.6.5"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="世\t\t界\t\t都\t\t在\t\t看"
+            android:textColor="#6c6c6e"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copyright@潭州学院\tJason"
+            android:textColor="#ef3f22"
+            android:textSize="18sp"
+            android:layout_marginTop="8dip"/>
+    </LinearLayout>
+    
+    
+    <TextView 
+        android:id="@+id/tv_mnetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="当前使用2G/3G/4G网络"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="#abdef8"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+    
+</RelativeLayout>

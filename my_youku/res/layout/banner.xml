@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dip" >
+
+        <com.tz.myyouku.view.BannerPager
+            android:id="@+id/vp_banner"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/banner_mask"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/author_layout"
+                    android:layout_alignParentLeft="true"
+                    android:text="[周末影院]疯狂原始人"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/home_gallery_item_more_img_normal" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_play_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/author_layout"
+                android:layout_marginTop="3dip"
+                android:text="4884.4万"
+                android:textColor="#929795"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
